@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Iezat Osman</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #0b0c10, #1f2833);
+      color: #c5c6c7;
+      font-family: 'Orbitron', sans-serif;
+    }
+    h1, h2 {
+      color: #66fcf1;
+    }
+    .navbar {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(6px);
+    }
+    .navbar a {
+      color: #c5c6c7 !important;
+    }
+    .navbar a:hover {
+      color: #66fcf1 !important;
+    }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #66fcf1;
+      object-fit: cover;
+      box-shadow: 0px 0px 20px #45a29e;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 20px #66fcf1;
+    }
+    table {
+      color: white;
+    }
+    .gallery img {
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🚀 Iezat Osman</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Kemahiran</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-5 mt-5">
+    <img src="gambar/foto-saya.JPG" alt="Foto Profil" class="profile-img animate__animated animate__fadeInDown">
+    <h1 class="mt-3 animate__animated animate__fadeInUp">IEZAT OSMAN</h1>
+    <p class="lead">💻 Pelatih Pembangun Web | Misi: Menjelajah Dunia Digital</p>
+    <p>
+      <a href="mailto:nuriezathakimi@email.com" class="text-info">📧 E-mel</a> | 
+      <a href="tel:0139276063" class="text-info">📞 Telefon</a>
+    </p>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="container py-5">
+    <div class="card p-4 animate__animated animate__fadeInLeft">
+      <h2>Tentang Saya</h2>
+      <p>Salam perkenalan! Saya Nur Iezat Hakimi, pelajar yang bersemangat dalam pembangunan web. 
+      Saya percaya teknologi adalah kunci masa depan, dan saya ingin menjadi sebahagian daripada perubahan itu. 
+      Minat saya termasuk HTML, CSS, JavaScript, dan saya bercita-cita menjadi pembangun web profesional.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container py-5">
+    <div class="card p-4 animate__animated animate__fadeInRight">
+      <h2>Kemahiran & Minat</h2>
+      <ul>
+        <li>HTML5, CSS3</li>
+        <li>Penyelesaian Masalah</li>
+        <li>Kerja Berpasukan</li>
+        <li>Pengurusan Masa</li>
+        <li>Reka Bentuk Responsif</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="container py-5">
+    <div class="card p-4 animate__animated animate__fadeInLeft">
+      <h2>Pendidikan</h2>
+      <table class="table table-dark table-striped mt-3">
+        <thead>
+          <tr>
+            <th>Tahun</th>
+            <th>Institusi</th>
+            <th>Program/Ijazah</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2014 - 2015</td>
+            <td>KMPP</td>
+            <td>Matrikulasi</td>
+          </tr>
+          <tr>
+            <td>2015 - 2019</td>
+            <td>Universiti Malaysia Terengganu</td>
+            <td>Sarjana Muda Sains Komputer</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="container py-5">
+    <div class="card p-4 animate__animated animate__fadeInRight">
+      <h2>Galeri</h2>
+      <div class="row gallery mt-3">
+        <div class="col-md-4 col-12 mb-3">
+          <img src="gambar/gallery/imej-pemandangan.jpeg" class="img-fluid" alt="Pemandangan">
+        </div>
+        <div class="col-md-4 col-12 mb-3">
+          <img src="gambar/gallery/imej-coding.PNG" class="img-fluid" alt="Coding">
+        </div>
+        <div class="col-md-4 col-12 mb-3">
+          <img src="gambar/gallery/imej-buku.jpg" class="img-fluid" alt="Buku">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Iezat Osman | Dibina dengan 💙 menggunakan Bootstrap & Animate.css
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
