@@ -1,0 +1,143 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      background: black;
+    }
+
+    /* Background */
+    body {
+      background: url('/gambar/portfolio-landing-page.jpg') no-repeat center center/cover;
+      position: relative;
+    }
+
+    /* Stars Layer */
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      box-shadow:
+        100px 200px white,
+        300px 400px white,
+        500px 600px white,
+        700px 800px white,
+        900px 100px white,
+        1200px 300px white,
+        1300px 700px white,
+        1600px 500px white;
+      animation: twinkle 5s infinite alternate;
+      z-index: 0;
+    }
+    @keyframes twinkle {
+      from { opacity: 1; }
+      to { opacity: 0.5; }
+    }
+
+    /* Shooting Star */
+    .shooting-star {
+      position: absolute;
+      top: 50px;
+      left: -200px;
+      width: 200px;
+      height: 2px;
+      background: linear-gradient(90deg, white, transparent);
+      animation: shoot 5s linear infinite;
+      animation-delay: 3s;
+      z-index: 0;
+    }
+    @keyframes shoot {
+      0% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+      }
+      70% {
+        transform: translateX(1200px) translateY(300px);
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    /* Clouds */
+    .clouds {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background: url('gambar/clouds.png') repeat-x;
+      background-size: cover;
+      opacity: 0.3;
+      animation: moveClouds 60s linear infinite;
+      z-index: 1;
+    }
+    @keyframes moveClouds {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #678495;
+      text-shadow: 0 0 20px rgba(102, 252, 241, 0.8);
+      margin-bottom: 20px;
+      animation: slideDown 1.5s ease forwards;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin-bottom: 30px;
+      color: #ddd;
+      animation: fadeIn 2s ease forwards 0.5s;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #0b0c10;
+      background: #66fcf1;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #45a29e;
+      color: white;
+      box-shadow: 0 0 20px rgba(102, 252, 241, 0.8);
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
